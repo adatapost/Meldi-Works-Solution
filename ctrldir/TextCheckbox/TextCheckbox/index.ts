@@ -2,6 +2,15 @@ import {IInputs, IOutputs} from "./generated/ManifestTypes";
 
 export class TextCheckbox implements ComponentFramework.StandardControl<IInputs, IOutputs> {
 
+	private context: ComponentFramework.Context<IInputs>;
+	private notifyOutputChanged: () => void;
+	private container: HTMLDivElement;
+	private value: string | null;
+	private checkedValue: string | null;
+	private uncheckedValue: string | null;
+	private checkboxCheckHandler: EventListener;
+	private checkStatus: boolean;
+
 	/**
 	 * Empty constructor.
 	 */
@@ -20,7 +29,46 @@ export class TextCheckbox implements ComponentFramework.StandardControl<IInputs,
 	 */
 	public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container:HTMLDivElement): void
 	{
-		// Add control initialization code
+		this.context = context;
+		this.notifyOutputChanged = notifyOutputChanged;
+		this.container = container;
+		this.checkboxCheckHandler = this.checkboxCheck.bind(this);
+		this.checkedValue = this.context.parameters.CheckedValue.raw;
+		this.uncheckedValue = this.context.parameters.UncheckedValue.raw;
+		this.checkStatus = false;
+
+		const checkbox = document.createElement("input");
+		const span = document.createElement("span");
+		const label = document.createElement("label");
+
+		label.innerHTML = this.context.parameters.Label.raw ?? "";
+		 
+		if(checkbox) {
+			checkbox.type = "checkbox";
+			checkbox.addEventListener("change",this.checkboxCheckHandler);
+			
+			if(this.context.parameters.Value.raw) {
+		 	    checkbox.checked = "Yes true yes 1 True".includes(this.context.parameters.Value.raw ?? "");
+			    this.checkStatus = checkbox.checked;
+			}
+		}
+		if(this.context.parameters.Left.raw == "Left") {
+			span.appendChild(checkbox);
+			span.appendChild(label);
+		} else {
+			span.appendChild(label);
+			span.appendChild(checkbox);
+		}
+		this.container.appendChild(span);
+		this.notifyOutputChanged();	 
+	}
+
+	public checkboxCheck() {
+		const checkbox = this.container.querySelector('input');
+		if(checkbox) {
+			this.checkStatus = checkbox.checked;		
+			this.notifyOutputChanged();	 
+		}
 	}
 
 
@@ -30,7 +78,20 @@ export class TextCheckbox implements ComponentFramework.StandardControl<IInputs,
 	 */
 	public updateView(context: ComponentFramework.Context<IInputs>): void
 	{
-		// Add code to update control view
+		const checkbox = this.container.querySelector('input');
+		const label = this.container.querySelector('label');
+		if(label) {
+			label.innerHTML = this.context.parameters.Label.raw ?? "";
+		}
+		
+		if(checkbox) {
+
+			if(this.context.parameters.Value.raw) {
+			 checkbox.checked = "Yes true yes 1 True".includes(this.context.parameters.Value.raw ?? "");		
+			 this.checkStatus = checkbox.checked;	 
+			}
+		}
+		console.log('updateView method');
 	}
 
 	/**
@@ -39,7 +100,10 @@ export class TextCheckbox implements ComponentFramework.StandardControl<IInputs,
 	 */
 	public getOutputs(): IOutputs
 	{
-		return {};
+		console.log('getOutput method');
+		return {
+			Value: (this.checkStatus ? this.context.parameters.CheckedValue.raw : this.context.parameters.UncheckedValue.raw) ?? ""  
+		};
 	}
 
 	/**
@@ -48,6 +112,7 @@ export class TextCheckbox implements ComponentFramework.StandardControl<IInputs,
 	 */
 	public destroy(): void
 	{
-		// Add code to cleanup control if necessary
+		console.log('destroy method');
+		this.container.querySelector("input")!.removeEventListener("change", this.checkboxCheckHandler);
 	}
 }
