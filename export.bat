@@ -1,0 +1,1 @@
+pac solution export -n MeldiWorksSolution -p zip && pac solution unpack -z zip\MeldiWorksSolution.zip -f src
