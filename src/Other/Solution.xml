@@ -82,6 +82,7 @@
     <RootComponents>
       <RootComponent type="1" schemaName="meldi_dept" behavior="0" />
       <RootComponent type="66" schemaName="meldi_Kvp.TextCheckbox" behavior="0" />
+      <RootComponent type="300" schemaName="meldi_meldiworkscanvasphonefactor_71113" behavior="0" />
     </RootComponents>
     <MissingDependencies />
   </SolutionManifest>

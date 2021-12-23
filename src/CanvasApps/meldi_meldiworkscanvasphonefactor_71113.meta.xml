@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>meldi_meldiworkscanvasphonefactor_71113</Name>
+  <AppVersion>2021-12-23T04:52:12Z</AppVersion>
+  <Status>Ready</Status>
+  <CreatedByClientVersion>3.21115.37.0</CreatedByClientVersion>
+  <MinClientVersion>3.21115.37.0</MinClientVersion>
+  <Tags>{"primaryDeviceWidth":"640","primaryDeviceHeight":"1136","sienaVersion":"fe13e9b7-59cb-4f7f-9a0c-e44d6c6fa60b","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Phone","publisherVersion":"3.21115.37","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <IsCdsUpgraded>0</IsCdsUpgraded>
+  <GalleryItemId xsi:nil="true"></GalleryItemId>
+  <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
+  <DisplayName>Meldi Works (Canvas) Phone Factor</DisplayName>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage>Added title</CommitMessage>
+  <Publisher xsi:nil="true"></Publisher>
+  <AuthorizationReferences>[]</AuthorizationReferences>
+  <ConnectionReferences>{"9cad9ee4-8d02-4808-8f94-d37d7c33f556":{"id":"/providers/microsoft.powerapps/apis/shared_sharepointonline","displayName":"SharePoint","iconUri":"https://connectoricons-prod.azureedge.net/releases/v1.0.1539/1.0.1539.2620/sharepointonline/icon.png","dataSources":["Branch","Documents"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{"https://concettodev.sharepoint.com/sites/DevTeam":{"dataSources":{"Branch":{"tableName":"79afce0b-5c20-49e6-9e65-44021404df04"},"Documents":{"tableName":"f2c9c9a6-3adb-41c0-87d3-5e369923fbbd"}}}},"apiTier":"Standard","actions":["providers/PowerPlatform.Governance/Operations/Read","providers/PowerPlatform.Governance/Operations/Write"]}}</ConnectionReferences>
+  <DatabaseReferences>{}</DatabaseReferences>
+  <AppComponents>[]</AppComponents>
+  <AppComponentDependencies>[]</AppComponentDependencies>
+  <CanConsumeAppPass>1</CanConsumeAppPass>
+  <CanvasAppType>0</CanvasAppType>
+  <BypassConsent>0</BypassConsent>
+  <AdminControlBypassConsent>0</AdminControlBypassConsent>
+  <EmbeddedApp xsi:nil="true"></EmbeddedApp>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <CdsDependencies>{"cdsdependencies":[]}</CdsDependencies>
+  <IsCustomizable>1</IsCustomizable>
+  <BackgroundImageUri>/CanvasApps/meldi_meldiworkscanvasphonefactor_71113_BackgroundImageUri</BackgroundImageUri>
+  <DocumentUri>/CanvasApps/meldi_meldiworkscanvasphonefactor_71113_DocumentUri.msapp</DocumentUri>
+</CanvasApp>
