@@ -1,2 +1,2 @@
-msbuild /restore
+msbuild /t:build /restore
 msbuild

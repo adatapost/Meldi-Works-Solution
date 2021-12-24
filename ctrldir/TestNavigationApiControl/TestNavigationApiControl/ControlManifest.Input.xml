@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Kvp" constructor="TestNavigationApiControl" version="0.0.1" display-name-key="TestNavigationApiControl" description-key="TestNavigationApiControl description" control-type="standard" >
+    <property name="Name" display-name-key="Name" description-key="Name property of an entity" of-type="SingleLine.Text" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+    </resources>
+    
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+      <uses-feature name="Navigation" required="true" />
+    </feature-usage>
+    
+  </control>
+</manifest>

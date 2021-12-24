@@ -80,10 +80,36 @@
       </Addresses>
     </Publisher>
     <RootComponents>
+      <RootComponent type="1" schemaName="kvflow_project" behavior="0" />
+      <RootComponent type="1" schemaName="meldi_contractor" behavior="0" />
       <RootComponent type="1" schemaName="meldi_dept" behavior="0" />
-      <RootComponent type="66" schemaName="meldi_Kvp.TextCheckbox" behavior="0" />
+      <RootComponent type="1" schemaName="meldi_supplier" behavior="0" />
+      <RootComponent type="62" schemaName="meldi_TouchpointTestApp" behavior="0" />
+      <RootComponent type="80" schemaName="meldi_TouchpointTestApp" behavior="0" />
       <RootComponent type="300" schemaName="meldi_meldiworkscanvasphonefactor_71113" behavior="0" />
+      <RootComponent type="300" schemaName="meldi_touchpointtestappdefaultcommandlibrary_589f9" behavior="0" />
     </RootComponents>
-    <MissingDependencies />
+    <MissingDependencies>
+      <MissingDependency>
+        <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
+        <Dependent type="80" schemaName="meldi_TouchpointTestApp" displayName="Touchpoint Test App" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="meldi_Kvp.TestNavigationApiControl" displayName="meldi_Kvp.TestNavigationApiControl" solution="Active" />
+        <Dependent type="60" displayName="Project (A)" parentDisplayName="Project" id="{fbc8a842-a02f-47ed-b158-4acb55408010}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="meldi_Kvp.TextCheckbox" displayName="meldi_Kvp.TextCheckbox" solution="Active" />
+        <Dependent type="60" displayName="Project (B)" parentDisplayName="Project" id="{ae6203a3-9f64-ec11-8f8f-000d3aca084f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="meldi_Kvp.TextCheckbox" displayName="meldi_Kvp.TextCheckbox" solution="Active" />
+        <Dependent type="60" displayName="Dept (Works)" parentDisplayName="Dept" id="{d65aa6e3-b263-ec11-8f8f-000d3aca084f}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="meldi_Kvp.TextCheckbox" displayName="meldi_Kvp.TextCheckbox" solution="Active" />
+        <Dependent type="60" displayName="Project (A)" parentDisplayName="Project" id="{fbc8a842-a02f-47ed-b158-4acb55408010}" />
+      </MissingDependency>
+    </MissingDependencies>
   </SolutionManifest>
 </ImportExportXml>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="Kvp" constructor="Touchpoints" version="0.0.1" display-name-key="Touchpoints" description-key="Touchpoints description" control-type="standard" >
+    <property name="Labels" display-name-key="Labels" description-key="Labels, a semi-colon separated string" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Forms" display-name-key="Forms" description-key="Forms, a semi-colon separated string" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Entities" display-name-key="Entities" description-key="Entities, a semi-colon separated string" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="RefEntities" display-name-key="RefEntities" description-key="Entities, a semi-colon separated string" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="Guid" display-name-key="Guid" description-key="Record GUID" of-type="SingleLine.Text" usage="bound" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <!-- UNCOMMENT TO ADD MORE RESOURCES
+      <css path="css/Touchpoints.css" order="1" />
+      <resx path="strings/Touchpoints.1033.resx" version="1.0.0" />
+      -->
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true" />
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<forms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <systemform>
+    <formid>{fbc8a842-a02f-47ed-b158-4acb55408010}</formid>
+    <IntroducedVersion>1.0</IntroducedVersion>
+    <FormPresentation>1</FormPresentation>
+    <FormActivationState>1</FormActivationState>
+    <form headerdensity="HighWithControls">
+      <tabs>
+        <tab verticallayout="true" id="{30b03724-108b-4918-a00c-e9312167b604}" IsUserDefined="1">
+          <labels>
+            <label description="General" languagecode="1033" />
+          </labels>
+          <columns>
+            <column width="100%">
+              <sections>
+                <section showlabel="false" showbar="false" IsUserDefined="0" id="{1a0a9bf8-93eb-4f07-bef4-e3d9da7d0125}" name="{1a0a9bf8-93eb-4f07-bef4-e3d9da7d0125}" columns="1" locklevel="0" labelwidth="130" celllabelalignment="Left" celllabelposition="Top">
+                  <labels>
+                    <label description="General" languagecode="1033" />
+                  </labels>
+                  <rows>
+                    <row>
+                      <cell id="{ab8164d3-bc2e-4fca-94bc-fb53f6739556}" locklevel="0" colspan="1" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="kvflow_name" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="kvflow_name" disabled="false" uniqueid="{c127edaa-5aec-e69a-0a58-98eb3a15c471}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{1a5b005f-80d1-43ba-9317-ee25571673fa}" colspan="1" rowspan="1">
+                        <labels>
+                          <label description="Name" languagecode="1033" />
+                        </labels>
+                        <control id="kvflow_name" classid="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}" datafieldname="kvflow_name" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{4b3e7013-bff0-47b4-bb25-199b1e3d4b3c}" locklevel="0" colspan="1" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Project Status" languagecode="1033" />
+                        </labels>
+                        <control id="kvflow_projectstatus" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="kvflow_projectstatus" disabled="false" uniqueid="{c3e6ed5a-4145-9716-21ec-7e34917b9601}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{15621dd1-1f83-4f4b-a2c9-9e2c5a2bddb4}" locklevel="0" colspan="1" rowspan="1" showlabel="true">
+                        <labels>
+                          <label description="Current Phase" languagecode="1033" />
+                        </labels>
+                        <control id="kvflow_currentphase" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="kvflow_currentphase" disabled="false" uniqueid="{d85a5982-be22-885a-7495-d124c22e459e}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{68a219ad-a710-40e0-aaed-90dce5486315}" visible="false">
+                        <labels>
+                          <label description="Owner" languagecode="1033" />
+                        </labels>
+                        <control id="ownerid" classid="{270BD3DB-D9AF-4782-9025-509E298DEC0A}" datafieldname="ownerid" uniqueid="{4d8175ca-81b2-12a9-d973-a9ad18829763}" />
+                      </cell>
+                    </row>
+                  </rows>
+                </section>
+              </sections>
+            </column>
+          </columns>
+        </tab>
+      </tabs>
+      <header id="{5432e7cc-f404-4b94-b51a-49e4c0fd8225}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{2abf871e-40fc-4229-a2fe-19cc75e51a45}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{ebb57d7f-0d38-4741-9b76-7d259ee72c46}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{fdc7caae-1673-48a3-97fb-ba1f336a120b}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </header>
+      <footer id="{afb2ed35-5289-4162-ac58-9234d0d0521d}" celllabelposition="Top" columns="111" labelwidth="115" celllabelalignment="Left">
+        <rows>
+          <row>
+            <cell id="{ffffc377-f68e-4ca9-b9fa-822765c62b94}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{81dd8d57-54e1-4fb9-af69-b0f8031a6f77}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+            <cell id="{b4ba6ede-c552-41f0-86b6-289f5371102f}" showlabel="false">
+              <labels>
+                <label description="" languagecode="1033" />
+              </labels>
+            </cell>
+          </row>
+        </rows>
+      </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{d85a5982-be22-885a-7495-d124c22e459e}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>kvflow_currentphase</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">Please &lt;b&gt;suggest&lt;/b&gt; the name</Label>
+              <Value>kvflow_currentphase</Value>
+              <CheckedValue static="true" type="SingleLine.Text">1</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">0</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">Please &lt;b&gt;suggest&lt;/b&gt; the name</Label>
+              <Value>kvflow_currentphase</Value>
+              <CheckedValue static="true" type="SingleLine.Text">1</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">0</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">Please &lt;b&gt;suggest&lt;/b&gt; the name</Label>
+              <Value>kvflow_currentphase</Value>
+              <CheckedValue static="true" type="SingleLine.Text">1</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">0</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{c3e6ed5a-4145-9716-21ec-7e34917b9601}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>kvflow_projectstatus</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">This is the te st and the are wnarto sjd kaskld kasjd akaskdj kasdj as and seapoepl hose aofl are you nad red</Label>
+              <Left static="true" type="SingleLine.Text">Right</Left>
+              <Value>kvflow_projectstatus</Value>
+              <CheckedValue static="true" type="SingleLine.Text">Yes</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">No</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">This is the te st and the are wnarto sjd kaskld kasjd akaskdj kasdj as and seapoepl hose aofl are you nad red</Label>
+              <Left static="true" type="SingleLine.Text">Right</Left>
+              <Value>kvflow_projectstatus</Value>
+              <CheckedValue static="true" type="SingleLine.Text">Yes</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">No</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">This is the te st and the are wnarto sjd kaskld kasjd akaskdj kasdj as and seapoepl hose aofl are you nad red</Label>
+              <Left static="true" type="SingleLine.Text">Right</Left>
+              <Value>kvflow_projectstatus</Value>
+              <CheckedValue static="true" type="SingleLine.Text">Yes</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">No</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{c127edaa-5aec-e69a-0a58-98eb3a15c471}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>kvflow_name</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="meldi_Kvp.TestNavigationApiControl">
+            <parameters>
+              <Name>kvflow_name</Name>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="meldi_Kvp.TestNavigationApiControl">
+            <parameters>
+              <Name>kvflow_name</Name>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="meldi_Kvp.TestNavigationApiControl">
+            <parameters>
+              <Name>kvflow_name</Name>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
+      <DisplayConditions Order="0" FallbackForm="true">
+        <Everyone />
+      </DisplayConditions>
+    </form>
+    <IsCustomizable>1</IsCustomizable>
+    <CanBeDeleted>1</CanBeDeleted>
+    <LocalizedNames>
+      <LocalizedName description="Project (A)" languagecode="1033" />
+    </LocalizedNames>
+    <Descriptions>
+      <Description description="A form for this entity." languagecode="1033" />
+    </Descriptions>
+  </systemform>
+</forms>

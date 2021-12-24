@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppModule>
+  <UniqueName>meldi_TouchpointTestApp</UniqueName>
+  <IntroducedVersion>1.0</IntroducedVersion>
+  <WebResourceId>953b9fac-1e5e-e611-80d6-00155ded156f</WebResourceId>
+  <OptimizedFor></OptimizedFor>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+  <FormFactor>1</FormFactor>
+  <ClientType>4</ClientType>
+  <NavigationType>0</NavigationType>
+  <AppModuleComponents>
+    <AppModuleComponent type="1" schemaName="kvflow_project" />
+    <AppModuleComponent type="60" id="{ae6203a3-9f64-ec11-8f8f-000d3aca084f}" />
+    <AppModuleComponent type="60" id="{fbc8a842-a02f-47ed-b158-4acb55408010}" />
+    <AppModuleComponent type="1" schemaName="meldi_supplier" />
+    <AppModuleComponent type="1" schemaName="meldi_contractor" />
+    <AppModuleComponent type="62" schemaName="meldi_TouchpointTestApp" />
+  </AppModuleComponents>
+  <AppModuleRoleMaps>
+    <Role id="{236750cd-45ae-4939-ab12-b24b920ced93}" />
+    <Role id="{627090ff-40a3-4053-8790-584edc5be201}" />
+    <Role id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />
+  </AppModuleRoleMaps>
+  <LocalizedNames>
+    <LocalizedName description="Touchpoint Test App" languagecode="1033" />
+  </LocalizedNames>
+  <appelements>
+    <appelement uniquename="meldi_meldi_TouchpointTestApp_canvasappid_meldi_touchpointtestappdefaultcommandlibrary_589f9">
+      <canvasappid>
+        <name>meldi_touchpointtestappdefaultcommandlibrary_589f9</name>
+      </canvasappid>
+      <iscustomizable>1</iscustomizable>
+      <name>meldi_meldi_TouchpointTestApp_canvasappid_meldi_touchpointtestappdefaultcommandlibrary_589f9</name>
+    </appelement>
+  </appelements>
+</AppModule>

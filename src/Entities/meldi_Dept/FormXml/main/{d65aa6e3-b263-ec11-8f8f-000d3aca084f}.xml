@@ -36,11 +36,27 @@
                       </cell>
                     </row>
                     <row>
-                      <cell id="{115bb180-dc7e-4175-b02e-c4cebc897918}" locklevel="0" colspan="1" rowspan="1" labelid="{bc864707-947e-4ce5-8a35-bf512a409b64}">
+                      <cell id="{115bb180-dc7e-4175-b02e-c4cebc897918}" locklevel="0" colspan="1" rowspan="1" labelid="{bc864707-947e-4ce5-8a35-bf512a409b64}" showlabel="true">
                         <labels>
                           <label description="Location" languagecode="1033" />
                         </labels>
-                        <control id="meldi_location" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="meldi_location" disabled="false" />
+                        <control id="meldi_location" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="meldi_location" disabled="false" uniqueid="{51d78834-dca7-104d-05a5-92eba09026e8}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{aeb83c37-9ac4-3c6a-032e-a6a98a3eab1e}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="Text" languagecode="1033" />
+                        </labels>
+                        <control id="meldi_text" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="meldi_text" disabled="false" uniqueid="{a1903928-8371-961c-6b7e-a6780b1db615}" />
+                      </cell>
+                    </row>
+                    <row>
+                      <cell id="{b291809b-dc70-78ae-c3bb-d33b078eabcb}" showlabel="true" locklevel="0">
+                        <labels>
+                          <label description="No" languagecode="1033" />
+                        </labels>
+                        <control id="meldi_no" classid="{C6D124CA-7EDA-4a60-AEA9-7FB8D318B68F}" datafieldname="meldi_no" disabled="false" uniqueid="{2590575a-edbe-8958-7b45-34561a3575dc}" />
                       </cell>
                     </row>
                   </rows>
@@ -92,6 +108,103 @@
           </row>
         </rows>
       </footer>
+      <Navigation>
+        <NavBar></NavBar>
+        <NavBarAreas>
+          <NavBarArea Id="Info">
+            <Titles>
+              <Title LCID="1033" Text="Common" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Sales">
+            <Titles>
+              <Title LCID="1033" Text="Sales" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Service">
+            <Titles>
+              <Title LCID="1033" Text="Service" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="Marketing">
+            <Titles>
+              <Title LCID="1033" Text="Marketing" />
+            </Titles>
+          </NavBarArea>
+          <NavBarArea Id="ProcessCenter">
+            <Titles>
+              <Title LCID="1033" Text="Process Sessions" />
+            </Titles>
+          </NavBarArea>
+        </NavBarAreas>
+      </Navigation>
+      <controlDescriptions>
+        <controlDescription forControl="{a1903928-8371-961c-6b7e-a6780b1db615}">
+          <customControl id="{4273EDBD-AC1D-40d3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>meldi_text</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Value>meldi_text</Value>
+              <CheckedValue static="true" type="SingleLine.Text">1</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">0</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Value>meldi_text</Value>
+              <CheckedValue static="true" type="SingleLine.Text">1</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">0</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Value>meldi_text</Value>
+              <CheckedValue static="true" type="SingleLine.Text">1</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">0</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+        <controlDescription forControl="{51d78834-dca7-104d-05a5-92eba09026e8}">
+          <customControl id="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}">
+            <parameters>
+              <datafieldname>meldi_location</datafieldname>
+            </parameters>
+          </customControl>
+          <customControl formFactor="0" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">Is location set?</Label>
+              <Value>meldi_location</Value>
+              <CheckedValue static="true" type="SingleLine.Text">Yes</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">No</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="1" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">Is location set?</Label>
+              <Value>meldi_location</Value>
+              <CheckedValue static="true" type="SingleLine.Text">Yes</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">No</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+          <customControl formFactor="2" name="meldi_Kvp.TextCheckbox">
+            <parameters>
+              <Label static="true" type="Multiple">Is location set?</Label>
+              <Value>meldi_location</Value>
+              <CheckedValue static="true" type="SingleLine.Text">Yes</CheckedValue>
+              <UncheckedValue static="true" type="SingleLine.Text">No</UncheckedValue>
+              <msinternal.isvisibleinmocaonly static="true">true</msinternal.isvisibleinmocaonly>
+            </parameters>
+          </customControl>
+        </controlDescription>
+      </controlDescriptions>
       <DisplayConditions Order="1" FallbackForm="true">
         <Role Id="{627090ff-40a3-4053-8790-584edc5be201}" />
         <Role Id="{119f245c-3cc8-4b62-b31c-d1a046ced15d}" />

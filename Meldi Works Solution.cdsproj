@@ -45,6 +45,7 @@
   
   <ItemGroup>
     <ProjectReference Include="ctrldir\TextCheckbox\TextCheckbox.pcfproj" />
+    <ProjectReference Include="ctrldir\Touchpoints\Touchpoints.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
